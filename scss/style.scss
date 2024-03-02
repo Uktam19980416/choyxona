@@ -1,0 +1,22 @@
+@import "./_mixin.scss";
+@import "./_var.scss";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Zilla+Slab:wght@500&display=swap");
+
+@import "./files/loader.scss";
+@import "./files/slider.scss";
+@import "./files/header.scss";
+@import "./files/main.scss";
+@import "./files/footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zilla Slab", serif;
+  scroll-behavior: smooth;
+}
+
+.body {
+  @include setImage($bgImage);
+  height: 100%;
+}

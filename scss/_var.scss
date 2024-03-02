@@ -1,0 +1,19 @@
+$tablet: 760px;
+$mobile: 468px;
+
+$bg-color: rgb(213, 203, 203);
+$font-color: #023f75;
+$text-color: #fff;
+$title-color: #1d1c1c;
+$mainContentTitle-color: #e2e6e7;
+
+/* Loader */
+$anim_time: 2.1; // main pan/pancake animation (in seconds)
+$flatten_deg: 85; // how round will the pancake be at the top/peak (in deg), affecting general animation though so not really adjustable
+$angle: 27; // max pan's angle while flipping (in deg)
+$peak: 40%; // pancake's highest level, obviously ;)
+$color_back: #ffde6b; // background
+$color: #333; // the rest
+
+$bgImage: '../../images/bgImage.jpg';
+$linearGradient: linear-gradient(to right, #4b79a1, #283e51);

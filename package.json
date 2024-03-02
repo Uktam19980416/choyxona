@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js}\"",
+    "lint": "eslint \"src/*.{js}\" --quiet",
+    "scss-watch": "sass -w scss/:dist/css/",
+    "webpack-watch": "webpack --watch"
+  },
+  "keywords": [
+    "js",
+    "html"
+  ],
+  "author": "Uktamjon Rakhmatullaev",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  // position: fixed;
+  width: 100%;
+
+  @include forTablet {
+    padding: 10px 10px;
+  }
+
+  @include forMobile {
+    padding: 10px 5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+    filter: blur(10px);
+    margin: -20px;
+  }
+
+  &__logo-text {
+    font-size: 5rem;
+    font-family: "Alegreya SC", serif;
+    text-transform: uppercase;
+    background: $linearGradient;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    line-height: 70px;
+
+    @include forTablet {
+      font-size: 3rem;
+      line-height: 40px;
+    }
+
+    @include forMobile {
+      font-size: 2rem;
+      line-height: 25px;
+    }
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // width: 20%;
+
+  @include forTablet {
+    // width: 40%;
+  }
+
+  @include forMobile {
+    // width: 50%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+    filter: blur(10px);
+    margin: -20px;
+  }
+
+  &-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $font-color;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 0 20px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #0046a8;
+    }
+
+    @include forTablet {
+      font-size: 1.3rem;
+      margin: 0 10px;
+    }
+
+    @include forMobile {
+      font-size: 1rem;
+      margin: 0 5px;
+    }
+
+    &-active {
+      color: #a88600;
+    }
+  }
+}
